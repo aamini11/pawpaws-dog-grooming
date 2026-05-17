@@ -14,11 +14,13 @@
 		"check": "vp check",
 		"test": "vp test run",
 		"test:unit": "vp test run --project unit",
-		"test:update": "vp test run --project browser tests --update",
-		"test:ui": "echo '\n  Vitest UI: http://127.0.0.1:51204/__vitest__/\n' && vp test --ui --open=false --api.host 0.0.0.0 --api.allowWrite true",
-		"verify": "turbo run build test check"
+		"test:browser": "vp test run --project browser",
+		"test:update": "vp test run --project browser --update",
+		"test:watch": "vp test --watch",
+		"test:ui": "vp test dev --ui --open=false --api.port 5123 --api.strictPort --project browser"
 	},
 	"dependencies": {
+		"@aamini/config": "0.0.12",
 		"@fontsource-variable/dm-sans": "^5.2.8",
 		"@fontsource/playfair-display": "^5.2.8",
 		"@fontsource/space-grotesk": "^5.2.8",
@@ -31,19 +33,22 @@
 		"react-dom": "^19.2.4"
 	},
 	"devDependencies": {
-		"@aamini/config": "^0.0.1",
 		"@tailwindcss/vite": "^4.2.1",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@types/node": "^25.4.0",
 		"@types/react": "^19.2.14",
 		"@types/react-dom": "^19.2.3",
 		"@vitejs/plugin-react": "^6.0.1",
 		"@vitest/ui": "4.1.5",
+		"babel-plugin-react-compiler": "^1.0.0",
 		"msw": "^2.13.4",
-		"playwright": "^1.59.1",
+		"playwright": "*",
 		"tailwindcss": "^4.2.1",
 		"typescript": "6.0.2",
 		"vite": "catalog:",
+		"vite-plus": "catalog:",
 		"vitest": "catalog:",
-		"vitest-browser-react": "^2.2.0",
-		"vite-plus": "catalog:"
-	}
+		"vitest-browser-react": "^2.2.0"
+	},
+	"packageManager": "pnpm@11.1.2"
 }
