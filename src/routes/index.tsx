@@ -187,7 +187,7 @@ function Hero() {
 		<header className="relative overflow-hidden">
 			<div className="barber-stripes h-2 w-full" />
 			<div className="theme-bg-secondary relative">
-				<div className="mx-auto flex max-w-6xl flex-row items-center gap-4 px-8 py-16 text-center md:gap-12 md:px-6 md:py-24 md:text-left">
+				<div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-16 text-center md:py-24 lg:flex-row lg:gap-12 lg:text-left">
 					<div className="min-w-0 flex-1">
 						<h1 className="mb-6 font-serif text-5xl leading-[1.1] font-black md:text-6xl">
 							At Paw Paw's,
@@ -195,33 +195,33 @@ function Hero() {
 							<span className="theme-accent-gold">Our Puppies Are Family!</span>
 						</h1>
 
-						<p className="theme-text-secondary mx-auto mb-8 max-w-xl text-lg leading-relaxed md:mx-0">
+						<p className="theme-text-secondary mx-auto mb-8 max-w-xl text-lg leading-relaxed lg:mx-0">
 							Professional grooming with a personal touch. Every dog that walks
 							through our door gets the love and care they deserve.
 						</p>
 
-						<div className="flex min-w-0 flex-row items-stretch justify-center gap-3 md:justify-start">
+						<div className="mx-auto flex w-full max-w-md min-w-0 flex-col items-stretch justify-center gap-3 lg:mx-0 lg:flex-row lg:justify-start">
 							<a
 								href="https://paw-paws-dog-grooming-llc.square.site/new-client-form"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="theme-bg-accent-red theme-text-inverse inline-flex min-w-0 flex-1 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-bold shadow-lg shadow-[#b91c3a]/20 transition-transform hover:scale-[1.02] md:px-8 md:py-3.5 md:text-base"
+								className="theme-bg-accent-red theme-text-inverse inline-flex min-w-0 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-bold whitespace-nowrap shadow-lg shadow-[#b91c3a]/20 transition-transform hover:scale-[1.02] md:px-8 md:py-3.5 md:text-base lg:flex-1"
 							>
 								<ArrowRight className="h-5 w-5" />
-								New Client Form
+								New Client
 							</a>
 							<a
 								href="https://paw-paws-dog-grooming-llc.square.site/returning-client-form"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="theme-border theme-text-primary inline-flex min-w-0 flex-1 items-center justify-center gap-2 rounded-lg border-2 px-4 py-3 text-sm font-bold transition-colors hover:border-[#b91c3a] hover:bg-[#b91c3a] hover:text-white md:px-8 md:py-3.5 md:text-base"
+								className="theme-border theme-text-primary inline-flex min-w-0 items-center justify-center gap-2 rounded-lg border-2 px-4 py-3 text-sm font-bold whitespace-nowrap transition-colors hover:border-[#b91c3a] hover:bg-[#b91c3a] hover:text-white md:px-8 md:py-3.5 md:text-base lg:flex-1"
 							>
 								<ArrowRight className="h-5 w-5" />
-								Returning Client Form
+								Returning Client
 							</a>
 						</div>
 
-						<div className="theme-text-secondary mx-auto mt-8 flex w-fit flex-row flex-wrap justify-center gap-x-4 gap-y-2 text-left text-xs font-medium md:mx-0 md:justify-start">
+						<div className="theme-text-secondary mx-auto mt-8 flex w-fit flex-row flex-wrap justify-center gap-x-4 gap-y-2 text-left text-xs font-medium lg:mx-0 lg:justify-start">
 							<span className="flex items-center gap-1.5">
 								<CheckCircle2 className="theme-accent-gold h-3.5 w-3.5" />
 								Experienced Groomers
@@ -240,7 +240,7 @@ function Hero() {
 							</span>
 						</div>
 					</div>
-					<div className="mt-8 w-44 shrink-0 sm:w-52 md:mt-0 md:w-[420px] md:max-w-none md:shrink-0">
+					<div className="mt-8 w-44 shrink-0 sm:w-52 lg:mt-0 lg:w-[420px] lg:max-w-none lg:shrink-0">
 						<div className="theme-border relative overflow-hidden rounded-3xl border shadow-2xl">
 							<img
 								src="/images/dadys-puppy.jpg"
@@ -274,7 +274,7 @@ function Services() {
 				</p>
 			</div>
 
-			<div className="grid [grid-template-columns:repeat(auto-fit,minmax(260px,1fr))] gap-4 sm:gap-6">
+			<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
 				{services.map(({ icon: Icon, title, desc, includes }) => (
 					<div
 						key={title}
@@ -357,7 +357,7 @@ function Experience() {
 							loading="lazy"
 						/>
 					</div>
-					<div className="grid grid-cols-2 gap-4 sm:gap-8">
+					<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
 						{perks.map((p, i) => (
 							<div key={p.title} className="relative min-w-0">
 								<div className="theme-accent-gold mb-2 font-serif text-4xl font-black opacity-20 md:mb-4 md:text-5xl">
@@ -475,7 +475,7 @@ function ContactCTA() {
 					Questions about pricing or timing? Contact us for an estimate, or fill
 					out the right form so we can learn about your pup before the visit.
 				</p>
-				<div className="flex flex-wrap justify-center gap-4">
+				<div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
 					<a
 						href="https://paw-paws-dog-grooming-llc.square.site/new-client-form"
 						target="_blank"
@@ -483,7 +483,7 @@ function ContactCTA() {
 						className="theme-bg-accent-gold theme-text-primary inline-flex items-center gap-2 rounded-lg px-8 py-3.5 text-base font-bold shadow-lg transition-transform hover:scale-[1.02]"
 					>
 						<ArrowRight className="h-5 w-5" />
-						New Client Form
+						New Client
 					</a>
 					<a
 						href="https://paw-paws-dog-grooming-llc.square.site/returning-client-form"
@@ -492,7 +492,7 @@ function ContactCTA() {
 						className="theme-border theme-text-inverse inline-flex items-center gap-2 rounded-lg border-2 px-8 py-3.5 text-base font-bold transition-colors hover:bg-white hover:text-[#1a2744]"
 					>
 						<ArrowRight className="h-5 w-5" />
-						Returning Client Form
+						Returning Client
 					</a>
 				</div>
 			</div>
