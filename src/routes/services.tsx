@@ -258,7 +258,7 @@ function ServicesPage() {
 			</main>
 
 			<footer className="theme-bg-primary theme-border border-t py-10">
-				<div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 md:flex-row">
+				<div className="mx-auto flex max-w-6xl items-center justify-center px-6">
 					<div className="flex items-center gap-2">
 						<img
 							src="/images/logo.png"
@@ -269,9 +269,6 @@ function ServicesPage() {
 							Paw Paws Dog Grooming, LLC
 						</span>
 					</div>
-					<p className="theme-text-secondary text-xs">
-						© {new Date().getFullYear()} All rights reserved.
-					</p>
 				</div>
 			</footer>
 		</div>

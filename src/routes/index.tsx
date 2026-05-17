@@ -514,10 +514,6 @@ function Footer() {
 						Paw Paws Dog Grooming, LLC
 					</span>
 				</div>
-				<p className="theme-text-secondary text-xs">
-					© {new Date().getFullYear()} Paw Paws Dog Grooming, LLC. All rights
-					reserved.
-				</p>
 				<div className="flex items-center gap-5">
 					<a
 						href="mailto:pawpawsdoggrooming@outlook.com"
