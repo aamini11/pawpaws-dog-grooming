@@ -68,6 +68,10 @@ function createWrapper(path: string, component: ComponentType) {
 	}
 }
 
+function getScreenshotMasks(screen: RenderResult): Locator[] {
+	return [screen.getByTitle('Paw Paws Dog Grooming Location')]
+}
+
 async function waitForPageIdle() {
 	await document.fonts.ready
 	await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()))
@@ -79,7 +83,9 @@ async function expectScreenshot(
 	name: string,
 	{ soft = false }: { soft?: boolean } = {},
 ) {
-	const options = { screenshotOptions: { scale: 'css' } } as const
+	const options = {
+		screenshotOptions: { mask: getScreenshotMasks(screen), scale: 'css' },
+	} as const
 	if (soft) {
 		await expect
 			.soft(screen.locator, `${name} page screenshot`)
