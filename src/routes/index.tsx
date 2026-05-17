@@ -278,7 +278,7 @@ function Services() {
 				{services.map(({ icon: Icon, title, desc, includes }) => (
 					<div
 						key={title}
-						className="theme-bg-secondary theme-border group relative overflow-hidden rounded-xl border p-6 transition-all hover:-translate-y-1 hover:shadow-lg"
+						className="theme-bg-secondary theme-border relative overflow-hidden rounded-xl border p-6"
 					>
 						<div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-[#b91c3a]/10">
 							<Icon className="theme-accent-red h-5 w-5" />
