@@ -191,11 +191,11 @@ function ServicesPage() {
 							<ArrowLeft className="h-4 w-4" /> Back to Home
 						</a>
 						<h1 className="mb-4 font-serif text-4xl font-bold md:text-5xl">
-							Services & Pricing
+							Services & Estimates
 						</h1>
 						<p className="theme-text-secondary mx-auto max-w-lg">
-							Every dog is different. Call us for a personalized quote based on
-							breed, size, and coat condition.
+							Every dog is different. Contact us for a personalized estimate
+							based on breed, size, coat condition, and care needs.
 						</p>
 					</div>
 				</div>
@@ -228,13 +228,25 @@ function ServicesPage() {
 					))}
 				</div>
 
-				<div className="theme-bg-accent theme-text-inverse mt-12 rounded-2xl p-8 text-center md:p-12">
+				<div className="theme-bg-secondary theme-border mt-12 rounded-2xl border p-8 text-center md:p-12">
 					<h3 className="mb-3 font-serif text-2xl font-bold">
-						Not sure what your pup needs?
+						Senior Dog Waiver
+					</h3>
+					<p className="theme-text-secondary mx-auto max-w-2xl leading-relaxed">
+						Senior dogs and pups with health concerns receive slower,
+						comfort-first care. A senior dog waiver may be required before
+						grooming so our team can review risks, special handling needs, and
+						owner preferences.
+					</p>
+				</div>
+
+				<div className="theme-bg-accent theme-text-inverse mt-8 rounded-2xl p-8 text-center md:p-12">
+					<h3 className="mb-3 font-serif text-2xl font-bold">
+						Need an estimate?
 					</h3>
 					<p className="theme-text-inverse/70 mb-6">
-						Give us a call and we'll recommend the perfect service for your
-						dog's breed and lifestyle.
+						Give us a call and we'll recommend the right service for your dog's
+						breed, lifestyle, coat, and schedule.
 					</p>
 					<a
 						href="tel:5048104320"

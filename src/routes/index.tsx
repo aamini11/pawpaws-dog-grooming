@@ -269,7 +269,8 @@ function Services() {
 				</h2>
 				<p className="theme-text-secondary mx-auto max-w-lg">
 					From quick tidy-ups to full spa days — every service is performed with
-					patience, skill, and a pocket full of treats.
+					patience, skill, and a pocket full of treats. Contact us for an
+					estimate based on your pup's breed, size, coat, and needs.
 				</p>
 			</div>
 
@@ -296,6 +297,15 @@ function Services() {
 						</ul>
 					</div>
 				))}
+			</div>
+
+			<div className="theme-bg-secondary theme-border mt-8 rounded-2xl border p-6 text-center md:p-8">
+				<h3 className="mb-2 font-serif text-2xl font-bold">Senior Dog Care</h3>
+				<p className="theme-text-secondary mx-auto max-w-2xl text-sm leading-relaxed md:text-base">
+					Senior dogs are groomed with extra patience and comfort breaks. For
+					older pups or dogs with health concerns, a senior dog waiver may be
+					required before service.
+				</p>
 			</div>
 		</section>
 	)
@@ -419,12 +429,10 @@ function Location() {
 							<h4 className="mb-3 text-sm font-bold">Hours</h4>
 							<div className="space-y-1.5 text-sm">
 								<div className="flex justify-between">
-									<span className="theme-text-secondary">Monday – Friday</span>
+									<span className="theme-text-secondary">
+										Monday – Saturday
+									</span>
 									<span className="font-medium">9:00 AM – 5:00 PM</span>
-								</div>
-								<div className="flex justify-between">
-									<span className="theme-text-secondary">Saturday</span>
-									<span className="font-medium">Closed</span>
 								</div>
 								<div className="flex justify-between">
 									<span className="theme-text-secondary">Sunday</span>
@@ -464,8 +472,8 @@ function ContactCTA() {
 					Ready to Join the Family?
 				</h2>
 				<p className="theme-text-inverse mx-auto mb-10 max-w-lg text-lg opacity-70">
-					New clients can fill out our form before arriving. Returning clients,
-					we've got you covered too.
+					Questions about pricing or timing? Contact us for an estimate, or fill
+					out the right form so we can learn about your pup before the visit.
 				</p>
 				<div className="flex flex-wrap justify-center gap-4">
 					<a
