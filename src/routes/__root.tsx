@@ -11,7 +11,7 @@ export const Route = createRootRoute({
 		meta: [
 			{ charSet: 'utf-8' },
 			{ name: 'viewport', content: 'width=device-width' },
-			{ title: 'Pawlished Pups | Premium Dog Grooming' },
+			{ title: 'Paw Paws Dog Grooming' },
 			{
 				name: 'description',
 				content:
@@ -19,7 +19,8 @@ export const Route = createRootRoute({
 			},
 		],
 		links: [
-			{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' },
+			{ rel: 'icon', type: 'image/png', href: '/images/logo.png' },
+			{ rel: 'apple-touch-icon', href: '/images/logo.png' },
 			{ rel: 'stylesheet', href: appCss },
 		],
 	}),
